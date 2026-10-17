@@ -1,11 +1,7 @@
+
 from fastapi import APIRouter
+from api.v1.endpoints.productos import router as productos_router
 
-api_router = APIRouter()
+router = APIRouter()
 
-# ========================================================
-# Registro de módulos de endpoints
-# Ejemplo a medida que se implementen las funcionalidades:
-# from api.v1.endpoints import tasks
-# api_router.include_router(tasks.router, prefix="/tasks", tags=["tasks"])
-# ========================================================
-
+router.include_router(productos_router)
