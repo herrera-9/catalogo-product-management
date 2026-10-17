@@ -1,5 +1,4 @@
 fastapi
-uvicorn
-pymongo
+uvicorn[standard]
+motor
 python-dotenv
-pydantic
